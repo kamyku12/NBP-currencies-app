@@ -1,3 +1,0 @@
-: Start backend
-start wsl 
-
