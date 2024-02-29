@@ -1,14 +1,14 @@
 import { Grid } from "@mui/material";
 import Header from "./Header/Header";
-import Router from "../Router/Router";
+import Main from "./Main/Main";
 
 function Layout() {
-    return <Grid container>
+    return <Grid container height='100%'>
         <Grid item xs={12}>
             <Header />
         </Grid>
         <Grid item xs={12}>
-            <Router />
+            <Main />
         </Grid>
     </Grid>
 }

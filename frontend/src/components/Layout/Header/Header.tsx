@@ -1,7 +1,6 @@
 import { AddCircle } from "@mui/icons-material";
-import { AppBar, Button, Grid, IconButton, Menu, MenuItem, Toolbar } from "@mui/material";
+import { AppBar, Button, Grid, IconButton, Menu, MenuItem, Toolbar, Typography } from "@mui/material";
 import { useState } from "react";
-import classes from './header.module.css'
 
 function Header() {
     const [anchorElement, setAnchorElement] = useState<null | HTMLElement>(null)
@@ -11,7 +10,7 @@ function Header() {
         <Toolbar>
             <Grid container>
                 <Grid item xs display='flex' alignItems='center'>
-                    <span className={`${classes.text}`}>BILLANCE</span>
+                    <Typography variant='h2'>BILLANCE</Typography>
                 </Grid>
                 <Grid item xs>
 
