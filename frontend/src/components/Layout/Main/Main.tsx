@@ -1,9 +1,9 @@
 import { Container } from "@mui/material"
 import { RouterProvider, createBrowserRouter } from "react-router-dom"
-import { BORDER_RADIUS } from "@utils/constants/layoutConstants"
-import Root from "@pages/Root"
-import Balance from "@pages/Balance"
-import ErrorPage from "@pages/ErrorPage"
+import { BORDER_RADIUS } from "@/utils/constants/layoutConstants"
+import Root from "@/pages/Root"
+import Balance from "@/pages/Balance"
+import ErrorPage from "@/pages/ErrorPage"
 
 
 function Main() {
