@@ -10,7 +10,11 @@ function Header() {
         <Toolbar>
             <Grid container>
                 <Grid item xs display='flex' alignItems='center'>
-                    <Typography variant='h2'>BILLANCE</Typography>
+                    <Button color='inherit' href='/'>
+                        <Typography variant='h4'>
+                            BILLANCE
+                        </Typography>
+                    </Button>
                 </Grid>
                 <Grid item xs>
 
@@ -21,9 +25,13 @@ function Header() {
                     </IconButton>
                     <Menu anchorEl={anchorElement} open={menuOpened} onClose={() => setAnchorElement(null)}>
                         <MenuItem>Add currency</MenuItem>
-                        <MenuItem>Add transaction</MenuItem>
+                        <MenuItem>
+                            Add transaction
+                        </MenuItem>
                     </Menu>
-                    <Button color="inherit">Login</Button>
+                    <Button color="inherit" href="/balance">
+                        Log in
+                    </Button>
                 </Grid>
             </Grid>
         </Toolbar>
