@@ -1,5 +1,5 @@
 function Root() {
-    return <p>Hello World</p>
+    return <p>Hello</p>
 }
 
 export default Root
