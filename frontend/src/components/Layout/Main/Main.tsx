@@ -4,14 +4,15 @@ import { BORDER_RADIUS } from "@/utils/constants/layoutConstants"
 import Root from "@/pages/Root"
 import Balance from "@/pages/Balance"
 import ErrorPage from "@/pages/ErrorPage"
-
+import Login from "@/pages/Login"
 
 function Main() {
 
     const errorElement = <ErrorPage />
     const router = createBrowserRouter([
         { path: "/", element: <Root />, errorElement },
-        { path: 'balance', element: <Balance />, errorElement }
+        { path: 'balance', element: <Balance />, errorElement },
+        { path: 'login', element: <Login />, errorElement }
     ])
 
     return <Container sx={{

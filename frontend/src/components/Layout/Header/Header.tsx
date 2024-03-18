@@ -1,8 +1,10 @@
+import useUserData from "@/hooks/useUserData";
 import { AddCircle } from "@mui/icons-material";
 import { AppBar, Button, Grid, IconButton, Menu, MenuItem, Toolbar, Typography } from "@mui/material";
 import { useState } from "react";
 
 function Header() {
+    const { logged } = useUserData()
     const [anchorElement, setAnchorElement] = useState<null | HTMLElement>(null)
     const menuOpened = Boolean(anchorElement)
 
@@ -29,8 +31,8 @@ function Header() {
                             Add transaction
                         </MenuItem>
                     </Menu>
-                    <Button color="inherit" href="/balance">
-                        Log in
+                    <Button color="inherit" href={logged ? '/balance' : '/login'}>
+                        {logged ? 'PROFILE' : 'LOG IN'}
                     </Button>
                 </Grid>
             </Grid>

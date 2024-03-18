@@ -1,8 +1,11 @@
 import Layout from './components/Layout/Layout'
+import UserContextProvider from './contexts/UserContext'
 
 function App() {
   return (
-    <Layout />
+    <UserContextProvider>
+      <Layout />
+    </UserContextProvider>
   )
 }
 
