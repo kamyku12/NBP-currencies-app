@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, request
 from pymongo import MongoClient
 
 app = Flask(__name__)
@@ -14,6 +14,17 @@ users = db.users
 @app.route("/api/members", methods=['GET'])
 def members():
     return {"members": ["Member1", "Member2", "Member3"]}
+
+
+@app.route("/users/register", methods=['POST'])
+def user_register():
+    data = request.data
+    print(data)
+
+@app.route("/users/login", methods=['GET'])
+def user_login():
+    data = request.data
+    print(data)
 # endregion
 
 
